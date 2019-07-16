@@ -1,14 +1,13 @@
-const Discord = require("discord.js");
-
 module.exports.run = async (bot, message, args) => {
-    message.author.send({embed: {
+  message.author.send({
+    embed: {
       color: 0x3fa3ea,
       title: "Hey salut :smiley: je suis Chibi Bot",
       description: "Voici les commandes que tu pourras faire!",
       fields: [{
-          name: "**Informations:**",
-          value: "Mon préfix: \"c!\"\n- c!help"
-        },
+        name: "**Informations:**",
+        value: "Mon préfix: \"c!\"\n- c!help"
+      },
         {
           name: "**Musique**",
           value: "- c!play [nom de la musique]\n- c!pause\n- c!play\n- c!replay\n- c!stop"
@@ -29,11 +28,12 @@ module.exports.run = async (bot, message, args) => {
           name: "**Créé par**",
           value: "4MBR3 M4 F3MM3 F0R3V3R#4989: programme\nAntix 727#4088: règles, avatar"
         }
-      ]}
-    });
-    message.channel.send(":thumbsup: L'aide t'a été envoyée en message privés!")
-}
+      ]
+    }
+  });
+  message.channel.send(":thumbsup: L'aide t'a été envoyée en message privés!")
+};
 
 module.exports.help = {
   name: "help"
-}
+};
